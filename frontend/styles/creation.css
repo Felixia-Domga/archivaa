@@ -1,0 +1,173 @@
+*{
+    margin: 0;
+    padding: 0;
+    text-decoration: none;
+    list-style: none;
+}
+
+body{
+    background-image: linear-gradient(to bottom, orange, white);
+    font-family: 'Bold', sans-serif;
+}
+
+.boite_creation{
+    margin: 10%;
+    padding: 16px;
+    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.08);
+    border-radius: 16px;
+    background-color: #FFFFFF;
+    gap: 12px;
+    flex-direction: row;
+    display: flex;
+    max-width: 1000px;
+    align-items: center;
+}
+
+h1{
+    margin: 0 0 20px 0;
+    padding: 0;
+    text-align: center;
+}
+
+.boite_gauche{
+    flex: 1; 
+    /* Pour prendre 50% de la largeur */
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    padding: 20px;
+}
+
+.image{
+    width: 100%;
+    height: auto;
+    max-height: 380px;
+    object-fit: contain;
+}
+
+.formulaire{
+    margin-top: 0;
+    display: flex;
+    flex-direction: column;
+    gap: 1px;
+}
+
+.name{
+    padding: 5px;
+    margin: 5px;
+    width: 70%;
+    outline: 0;
+    color: #4c4c4D;
+    border: none;
+    background-color: #FCFCFD;
+    border-radius: 8px;
+}
+
+.email{
+    padding: 5px;
+    margin: 5px;
+    width: 70%;
+    outline: 0;
+    border: none;
+    background-color: #FCFCFD;
+    border-radius: 8px;
+}
+
+.selection_niveaux{
+    padding: 5px;
+    margin: 5px;
+    width: 74%;
+    border: none;
+    outline: 0;
+    background-color: #FCFCFD;
+    border-radius: 8px;
+}
+
+.mdp{
+    padding: 5px;
+    margin: 5px;
+    width: 70%;
+    outline: 0;
+    border: none;
+    background-color: #FCFCFD;
+    border-radius: 8px;
+}
+
+.btn__primary{
+    margin: 5px;
+    border: none;
+    border-radius: 8px;
+    padding: 10px;
+    width: 75%;
+    background-color: orange;
+    color: white;
+    cursor: pointer;
+    transition: 0.5s;
+}
+
+.btn__primary:hover{
+    background-color: chocolate;
+}
+
+.lien_connexion{
+    color: orange;
+    text-decoration: underline;
+}
+
+/* ADAPTATION TÉLÉPHONE (MEDIA QUERIES)       */
+@media screen and (max-width: 768px) {
+
+    /* Navigation : passage en colonne */
+    .navbar {
+        padding: 20px;
+        flex-direction: column;
+        gap: 20px;
+    }
+
+    ul {
+        flex-direction: column;
+        align-items: center;
+        gap: 15px;
+    }
+
+    /* Barre de recherche plus large sur mobile */
+    .search {
+        width: 90%;
+    }
+
+    /* Grille de cartes : 1 seule colonne au lieu de 3 */
+    .cer-grid {
+        grid-template-columns: 1fr;
+        justify-items: center;
+    }
+
+    .cer-card {
+        max-width: 100%;
+        width: 100%;
+    }
+
+    /* En-tête de section */
+    .section-header {
+        flex-direction: column;
+        gap: 15px;
+        align-items: flex-start;
+    }
+
+    /* Footer : empilement vertical des éléments */
+    footer {
+        grid-template-columns: 1fr;
+        gap: 24px;
+        text-align: center;
+    }
+
+    .footer2 {
+        grid-column: span 1;
+    }
+
+    .archiva_autres, 
+    .acceuil ul, 
+    .image_sociales {
+        align-items: center;
+        justify-content: center;
+    }
+}

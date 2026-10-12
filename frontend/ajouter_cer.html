@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Archiva - Ajout de CER</title>
+    <link rel="stylesheet" href="styles/ajout.css">
+    <link rel="shortcut icon" href="assets/archiva.png">
+</head>
+<body>
+
+    <div class="modal">
+        <div class="first_line">
+            <h3>Ajouter un nouveau CER</h3>
+            <button type="button" class="modal__close">✕</button>
+        </div>
+
+        <form action="#" method="POST" class="cer-form">
+            <div class="form-group">
+                <label for="title">Titre du CER</label>
+                <input type="text" id="title" name="title" placeholder="Exemple: Prosit 4.3 - Recherche Opérationnelle" class="title">
+            </div>
+
+            <div class="form-group">
+                <label for="level">Niveaux</label>
+                <select name="level" id="level" class="level">
+                    <option value="X5">X5</option>
+                    <option value="X4" selected>X4</option>
+                    <option value="X3">X3</option>
+                    <option value="X2">X2</option>
+                    <option value="X1">X1</option>
+                </select>
+            </div>
+
+            <div class="form-group">
+                <label>Domaines de spécialité</label>
+                <div class="checkbox-group">
+                    <input type="checkbox" id="domaine-gestion" name="domain" value="gestion">
+                    <label for="domaine-gestion">Gestion de projet</label>
+
+                    <input type="checkbox" id="domaine-gl" name="domain" value="gl">
+                    <label for="domaine-gl">Génie-logiciel</label>
+
+                    <input type="checkbox" id="domaine-reseau" name="domain" value="reseau">
+                    <label for="domaine-reseau">Réseaux & Infra</label>
+
+                    <input type="checkbox" id="domaine-securite" name="domain" value="securite">
+                    <label for="domaine-securite">Sécurité</label>
+
+                    <input type="checkbox" id="domaine-data" name="domain" value="data">
+                    <label for="domaine-data">Data</label>
+                </div>
+            </div>
+
+            <div>
+                <label for="description">Description du CER</label>
+                <textarea id="description" name="description" placeholder="Entrez ici la description ou un résumé de votre CER" class="desc"></textarea>
+            </div>
+
+            <div>
+                <label>Fichiers du CER</label>
+                <input type="file" name="cer_file" id="cer_file" accept=".pdf, .docx, .doc" style="display: none;">
+                <label for="cer_file" class="drop-zone">
+                    <img src="assets/fichier.png" alt="Icône de dépôt" class="btn-upload__icon">
+                    <span>Cliquez ici pour attacher le fichier du CER (.pdf ou .docx)</span>
+                </label>
+            </div>
+
+            <button type="submit" class="btn btn--primary">Enregistrer</button>
+        </form>
+    </div>
+    <script src="scripts/ajout.js"></script>
+</body>
+</html>

@@ -1,0 +1,18 @@
+J'aimerais maintenant que tu procède de cette façon, lorsque je finis de répondre à un CCTL ne me donne pas encore le bilan, attends d'abord que je termine le deuxième CCTL et après ça tu feras une sorte de bouton relecture qui me permettra de voir ce que j'ai eu à faire comme erreur et réussite. Bon voilà comment tu vas présenter les résultats, Les barèmes A, B, etc avec leurs émojis bien sûr, les questions doivent être sous la vraie forme de cases à cocher multiples ou uniques, et enfin surtout ne montre pas encore la vraie réponse tant que je n'ai pas encore finit les deux CCTL, Et chaque compétence doit avoir 5 questions chacune, si 4 Compt alors 20 Qts, si 5 alors 25 Qts. Alors tu as compirs le système d'Ucac ICAM? Si c'est bon dis le moi avant que je ne t'envoie les compétences.  Et aussi j'ajoute un petit truc, voici le mail du tuteur qui dit:    
+Bonjour à tous,
+Je viens de recevoir de M. Aloys la structure complète du CCTL prévu demain. Je souhaite donc vous apporter, en amont, quelques précisions concernant le déroulement de l’épreuve.
+Le CCTL sera structuré comme suit :
+- 30 questions au total ;
+- 40 minutes pour l’ensemble de l’épreuve ;
+- aucune question de définition ou de restitution de cours ;
+- les 30 questions seront exclusivement basées sur du code.
+L’évaluation portera ainsi essentiellement sur votre capacité à lire, comprendre et analyser un code, puis à mobiliser cette compréhension pour répondre aux différentes questions.
+Je vous recommande donc de consacrer vos dernières révisions à la lecture et à la compréhension du code, en vous entraînant notamment à identifier rapidement le fonctionnement d’un programme et à en déduire le résultat ou le comportement attendu.
+Je vous souhaite à tous une excellente préparation et beaucoup de réussite pour demain.
+Cordialement,  Donc tu vois l'envergure que va prendre le CCTL ? Alors j'aimerais que dans les mini cours tu puisses me donner les notions importantes à savoir du code et aussi au moment de l'évaluation que tu me fasses vraiment bosser sur le code, allant du mode facile, intermédiaire jusqu'à difficile, au fur et à mesure que je réussi les QCM je te dirais de passer à un autre niveau quand je serai prêt. Comme tu as été avec moi depuis le tout début du module en m'aidant dans le code, j'imagine que tu te souviendra assez bien des notions sur lesquelles me tester, sur ce allons-y avec les mini cours avant que je t'envoie les compétences. Bon les voilà, surtout nourrit toi des ressources car c'est là que l'école peut me piéger: Objectifs HTML/CSS & JavaScript
+Compétence 1 : Comprendre la notion de design 
+Compétence 2 : Sémantique
+Compétence 3 : Concevoir un mockup statique
+Compétence 4 : Apprendre à manipuler le Document Object Model (DOM) avec JavaScript
+Compétence 5 : Implémenter la validation des entrées utilisateurs avec JavaScript pour assurer l’intégrité des données
+Compétence 6 : Assurer la cohérence entre le contenu statique (HTML/CSS) et les fonctionnalités dynamiques (JavaScript)

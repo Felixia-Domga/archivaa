@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Archiva-Création de compte</title>
+    <link rel="stylesheet" href="styles/creation.css">
+    <link rel="shortcut icon" href="assets/archiva.png">
+</head>
+
+<body>
+    <div class="boite_creation">
+        <div class="boite_gauche">
+            <h1>Créer un compte</h1>
+            <div>
+                <form action="#" method="post" class="formulaire" name="myForm" onsubmit="validerFormulaire()">
+                    <label for="nom">Nom complet</label><br>
+                    <input type="text" id="nom" name="fullname" placeholder="Nom complet" class="name"><br>
+
+                    <label for="email">Email</label><br>
+                    <input type="email" id="email" name="email" placeholder="Entrer votre email" class="email"><br>
+
+                    <label for="level">Niveaux</label><br>
+                    <select name="" id="level" class="selection_niveaux">
+                        <option value="x1">X1</option>
+                        <option value="x2">X2</option>
+                        <option value="x3">X3</option>
+                        <option value="x4">X4</option>
+                        <option value="x5">X5</option>
+                    </select><br>
+
+                    <!-- New password pour permettre à l'utilisateur d'entrer un nouveau mot de passe différent de l'ancien -->
+                    <label for="mdp">Mot de passe</label><br>
+                    <input type="password" id="mdp" name="password" autocomplete="new-password"  placeholder="Entrer votre mot de passe" class="mdp"><br>
+                    <button type="submit" class="btn btn__primary">Créer un compte</button>
+                </form>
+                <p>Vous avez déjà un compte? <a href="connexion.html" class="lien_connexion">Connectez-vous</a></p>
+            </div>
+        </div>
+        <div>
+            <img src="assets/creation_compte.png" alt="Photo de création de compte" height="500" class="image">
+        </div>
+    </div>
+    <script src="scripts/creation.js"></script>
+</body>
+</html>

@@ -1,0 +1,238 @@
+*{
+    margin: 0;
+    padding: 0;
+    text-decoration: none;
+    list-style: none;
+}
+
+body{
+    font-family: 'Bold', sans-serif;
+    background-color: #F9F9FB;
+}
+
+/* Barre de navigation */
+.navbar{
+    padding: 50px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 50px;
+    border-bottom: 1px solid #eee;
+}
+
+.nav__link--active{
+    border: none;
+    border-radius: 6px;
+    gap: 30px;
+    cursor: pointer;
+    background-color: rgb(232 238 239);
+    padding: 8px 20px;
+}
+
+ul{
+    color: #000;
+    display: flex;
+    justify-content: space-between;
+    gap: 30px;
+    cursor: pointer;
+    transition: 0.5s;
+}
+
+ul:hover{
+    color: orange;
+}
+
+.connexion{
+    margin: 8px 20px;
+    padding: 8px 30px;
+    border: none;
+    border-radius: 6px;
+    color: white;
+    background-color: orange;
+    cursor: pointer;
+    transition: 0.5s;
+}
+
+.connexion:hover{
+    background-color: chocolate;
+}
+/* Fin de la barre de navigation */
+
+/* Début du main */
+h1{
+    text-align: center;
+}
+
+.sous_le_titre{
+    margin: 20px;
+    margin-top: 60px;
+    display: flex;
+    justify-content: space-between; 
+    /* space-betwwen pour écarter les choses */
+    align-items: center;
+}
+
+.btn--primary{
+    background-color: orange;
+    color: white;
+    border: none;
+    border-radius: 6px;
+    padding: 12px;
+    transition: 0.5s;
+}
+
+.btn--primary:hover{
+    background-color: chocolate;
+}
+
+.cer__table{
+    margin-top: 40px;
+    width: 100%;
+    border-collapse: collapse;
+    background-color: #ffffff;
+    border-radius: 12px;
+    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.08);
+}
+
+.table-container{
+    max-width: 1000px;
+    margin: 0 auto;
+}
+
+th{
+    padding: 16px;
+    text-align: left;
+    border-bottom: 1px solid #eee;
+    /* Bordure très fine en bas des lignes */
+}
+td{
+    padding: 16px;
+    border-bottom: 1px solid #eee;
+}
+
+.btn--edit{
+    background-color: #ffa500;
+    border-radius: 6px;
+    padding: 6px 12px;
+    color: white;
+    transition: 0.5s;
+}
+
+.btn--edit:hover{
+    background-color: chocolate;
+}
+
+.btn--delete{
+    background-color: #ff0000;border-radius: 6px;
+    padding: 6px 12px;
+    color: white;
+}
+/* Fin du main */
+
+/* footer début */
+footer{
+    /* On aligne le footer sur la même grille que les carte */
+    max-width: 100%;
+    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.08);
+    margin: 10% auto 0 auto;
+    width: 90%;
+    padding:  40px 20px;
+    /* On organise maintenant les colonnes */
+    display: grid;
+    grid-template-columns: repeat(3, max-content);
+    gap: 32px;
+    justify-content: space-between;
+}
+
+.footer2{
+    grid-column: span 3;
+    text-align: center;
+}
+
+.image_archiva{
+    width: 150px;
+}
+
+.archiva_autres{
+    display: flex;
+    flex-direction: column;
+    gap: 8px;
+}
+
+.acceuil ul{
+    display: flex;
+    flex-direction: column;
+    gap: 8px;
+}
+
+.image_sociales{
+    margin-top: 10%;
+    display: flex;
+    height: 30px;
+    gap: 10px;
+}
+
+.image_sociales img{
+    width: 30px;
+    height: 30px;
+    object-fit: contain;
+}
+/* Fin du footer */
+
+/* ADAPTATION TÉLÉPHONE (MEDIA QUERIES)       */
+@media screen and (max-width: 768px) {
+
+    /* Navigation : passage en colonne */
+    .navbar {
+        padding: 20px;
+        flex-direction: column;
+        gap: 20px;
+    }
+
+    ul {
+        flex-direction: column;
+        align-items: center;
+        gap: 15px;
+    }
+
+    /* Barre de recherche plus large sur mobile */
+    .search {
+        width: 90%;
+    }
+
+    /* Grille de cartes : 1 seule colonne au lieu de 3 */
+    .cer-grid {
+        grid-template-columns: 1fr;
+        justify-items: center;
+    }
+
+    .cer-card {
+        max-width: 100%;
+        width: 100%;
+    }
+
+    /* En-tête de section */
+    .section-header {
+        flex-direction: column;
+        gap: 15px;
+        align-items: flex-start;
+    }
+
+    /* Footer : empilement vertical des éléments */
+    footer {
+        grid-template-columns: 1fr;
+        gap: 24px;
+        text-align: center;
+    }
+
+    .footer2 {
+        grid-column: span 1;
+    }
+
+    .archiva_autres, 
+    .acceuil ul, 
+    .image_sociales {
+        align-items: center;
+        justify-content: center;
+    }
+}

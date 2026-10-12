@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="styles/connexion.css">
+    <link rel="shortcut icon" href="assets/archiva.png">
+    <title>Archiva-Login</title>
+</head>
+<body>
+    <div class="boite_connexion">
+        <div class="boite_gauche">
+            <h1>Se connecter</h1>
+            <div>
+                <form action="#" method="post" class="formulaire" name="myForm" onsubmit="validerFormulaire()">
+                    <label for="email">Email</label><br>
+                    <input type="email" id="email" name="email" placeholder="Entrer votre email" class="email"><br>
+
+                    <label for="mdp">Mot de passe</label><br>
+                    <input type="password" id="mdp" name="password" autocomplete="current-password" placeholder="Entrer votre mot de passe" class="mdp"><br>
+
+                    <a href="#" class="login-form__forgot">Mot de passe oublié ?</a><br>
+                    <button type="submit" class="btn btn--primary">Se connecter</button>
+                </form>
+                <p>Vous n'avez pas de compte? <a href="creation_compte.html" class="lien_creation">Créez un nouveau compte</a></p>
+            </div>
+        </div>
+        <div>
+            <img src="assets/connexion.png" alt="Photo de connexion" height="500" class="image">
+        </div>
+    </div>
+    <script src="scripts/connexion.js"></script>
+</body>
+</html>

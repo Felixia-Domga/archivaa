@@ -1,0 +1,234 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Archiva-CERs</title>
+    <!-- Bootstrap 5 CSS3 -->
+    <link 
+        rel="stylesheet" 
+        href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" 
+        integrity="sha384
+        EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" 
+        crossorigin="anonymous"> 
+    <link rel="stylesheet" href="styles/cer.css">
+    <link rel="shortcut icon" href="assets/archiva.png">
+</head>
+<body>
+    <header>
+        <!-- Barre de navigation -->
+        <nav class="navbar navbar-expand-lg navbar-light bg-light shadow-sm">
+            <div class="container">
+                <!-- Logo -->
+                <a class="navbar-brand" href="index.html">
+                    <img src="assets/archiva.png" alt="Archiva Logo" height="50">
+                </a>
+
+                <!-- Bouton Hamburger pour mobile -->
+                <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav">
+                    <span class="navbar-toggler-icon"></span>
+                </button>
+
+                <!-- Liens de navigation -->
+                <div class="collapse navbar-collapse" id="navbarNav">
+                    <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+                        <li class="nav-item">
+                            <a class="nav-link" href="index.html">Accueil</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link active fw-bold" href="cers.html">CERs</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="mes_favoris.html">Mes CER Favoris</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="gestion_cer.html">Gestion de CER</a>
+                        </li>
+                    </ul>
+
+                    <!-- Bouton Connexion -->
+                    <a href="connexion.html" class="btn btn-outline-primary">Connexion</a>
+                </div>
+            </div>
+        </nav>
+    </header>
+
+    <main>
+        <!-- première section -->
+        <section>
+            <h1>Tous les CERs</h1>
+            <div class="sous_le_titre">
+                <p>25 CERs Au Total</p>
+                <input type="search" placeholder="Rechercher un CER" class="search">
+
+                <div class="tri">
+                    <label for="sort_by">Sort By: </label>
+                    <select name="sort" id="sort_by">
+                        <option value="name">Nom</option>
+                        <option value="date modified">Date modifié</option>
+                        <option value="size">Taille</option>
+                        <option value="date created">Date de création</option>
+                        <option value="authors">Auteur</option>
+                        <option value="categories">Catégories</option>
+                        <option value="title">Titre</option>
+                    </select>
+                    <img src="assets/en_cube.png" alt="Filtre en cube" height="20">
+                    <img src="assets/en_liste.png" alt="Filtre en liste" height="20">
+                </div>
+            </div>
+            <div class="cers-layout">
+            <!-- Conteneur pour la grille qui aura les 6 cartes de CER -->
+                <aside class="filters-sidebar">
+                    <!-- Pour les niveaux et domaines mis à gauche de la page à côté des cartes -->
+                    <div> 
+                        <h4>Niveaux</h4>
+                        <ul>
+                            <li><input type="checkbox" name="level" id="level-x5">
+                            <label for="level-x5">X5</label></li>
+                            <li><input type="checkbox" name="level" id="level-x4">
+                            <label for="level-x4">X4</label></li>
+                            <li><input type="checkbox" name="level" id="level-x3">
+                            <label for="level-x3">X3</label></li>
+                            <li><input type="checkbox" name="level" id="level-x2">
+                            <label for="level-x2">X2</label></li>
+                            <li><input type="checkbox" name="level" id="level-x1">
+                            <label for="level-x1">X1</label></li>
+                        </ul>
+                    </div>
+                    <div>
+                        <h4>Domaines de spécialité</h4>
+                        <ul>
+                            <li><input type="checkbox" name="" id="">
+                            <label for="">Réseaux & Infra</label></li>
+                            <li><input type="checkbox" name="" id="">
+                            <label for="">Génie-logiciel</label></li>
+                            <li><input type="checkbox" name="" id="">
+                            <label for="">Gestion de projet</label></li>
+                            <li><input type="checkbox" name="" id="">
+                            <label for="">Data</label></li>
+                            <li><input type="checkbox" name="" id="">
+                            <label for="">Sécurité</label></li>
+                        </ul>
+                    </div>
+                </aside>
+                <!-- Article va servir d'exemple pour une seule carte de CER -->
+                <div class="cer-grid"><!-- <div class="cer-grid"> Elle servira de conteneur pour les autres duplication card -->
+                    <article class="cer-card">
+                        <img src="assets/window.jpg" alt="Photo" height="110px" class="image1">
+                        <div class="cer-card__author">
+                            <span class="cer-card__heartbtn"><img src="assets/coeur1.png" alt="Coeur" height="25"></span>
+                            <span class="cer-card__author-name">par Sadjo Mamadou</span>
+                        </div>
+
+                        <h3 class="cer-card__title">Prosit 3.2 Annulaire Active Directory</h3>
+                        <p class="cer-card__description">L'Annulaire Active Directory (AD) est un service de gestion des identités et des accès utilisé principalement dans les environnements Windows. il permet de ...</p>
+
+                        <button class="btn btn--secondary">Consulter le CER</button>
+                    </article>
+                    <article class="cer-card">
+                        <img src="assets/uml.png" alt="Photo" height="110px" class="image1">
+                        <div class="cer-card__author">
+                            <span class="cer-card__heartbtn"><img src="assets/coeur1.png" alt="Coeur" height="25"></span>
+                            <span class="cer-card__author-name">par Pauline lock</span>
+                        </div>
+
+                        <h3 class="cer-card__title">Prosit 2.2 Modélisation UML</h3>
+                        <p class="cer-card__description">Le Langage de Modélisation Unifié, de l'anglais Unified Modeling Language, est un langage de modélisation graphique à base de pictogrammes conçu comme... </p>
+
+                        <button class="btn btn--secondary">Consulter le CER</button>
+                    </article>
+                    <article class="cer-card">
+                        <img src="assets/api.jpg" alt="Photo" height="110px" class="image1">
+                        <div class="cer-card__author">
+                            <span class="cer-card__heartbtn"><img src="assets/coeur1.png" alt="Coeur" height="25"></span>
+                            <span class="cer-card__author-name">parDaryl Noupik</span>
+                        </div>
+
+                        <h3 class="cer-card__title">Prosit 3.3 API et Webservice</h3>
+                        <p class="cer-card__description">Les API sont principalement axées sur la communication entre applications pour l'accès aux fonctionnalités. L'EDI se concentre sur l'énergie de documents...</p>
+
+                        <button class="btn btn--secondary">Consulter le CER</button>
+                    </article>
+                    <article class="cer-card">
+                        <img src="assets/ordinateur.jpg" alt="Photo" height="110px" class="image1">
+                        <div class="cer-card__author">
+                            <span class="cer-card__heartbtn"><img src="assets/coeur1.png" alt="Coeur" height="25"></span>
+                            <span class="cer-card__author-name">par Procidence Djekoun</span>
+                        </div>
+
+                        <h3 class="cer-card__title">Prosit 4.1 Développement avancé</h3>
+                        <p class="cer-card__description">Advance Web Developement fait référence au processus de création de sites Web dynamiques et intéractifs qui vont au-delà des pages Web statique...</p>
+
+                        <button class="btn btn--secondary">Consulter le CER</button>
+                    </article>
+                    <article class="cer-card">
+                        <img src="assets/molecule.png" alt="Photo" height="110px" class="image1">
+                        <div class="cer-card__author">
+                            <span class="cer-card__heartbtn"><img src="assets/coeur1.png" alt="Coeur" height="25"></span>
+                            <span class="cer-card__author-name">par Providence Djekoun</span>
+                        </div>
+
+                        <h3 class="cer-card__title">Prosit 4.5 Architecture microservices</h3>
+                        <p class="cer-card__description">Une architecture de microservices est un type d'architecture d'application dans laquelle l'application est développée sous la forme d'un ensemble de services...</p>
+
+                        <button class="btn btn--secondary">Consulter le CER</button>
+                    </article>
+                    <article class="cer-card">
+                        <img src="assets/ville.jpg" alt="Photo" height="110px" class="image1">
+                        <div class="cer-card__author">
+                            <span class="cer-card__heartbtn"><img src="assets/coeur1.png" alt="Coeur" height="25"></span>
+                            <span class="cer-card__author-name">par Sadjo Mamadou</span>
+                        </div>
+
+                        <h3 class="cer-card__title">Prosit 3.2 Annulaire Active Directory</h3>
+                        <p class="cer-card__description">L'architecture distribuée ou informatique distribuée désigne un système d'information ou un réseau pour lequel l'ensemble des ressources disponibles ne se trouvent...</p>
+
+                        <button class="btn btn--secondary">Consulter le CER</button>
+                    </article>
+                </div>
+            </div>
+            <div class="pagination">
+                <a href="#" class="pagination__item pagination__item--active">1</a>
+                <a href="#" class="pagination__item">2</a>
+                <a href="#" class="pagination__item">3</a>
+                <a href="#" class="pagination__item">4</a>
+            </div>
+        </section>
+    </main>
+    <footer>
+        <div class="archiva_autres">
+            <img src="assets/archiva.png" alt="Archiva Logo" height="40" class="image_archiva">
+            <a href="mailto:info@archiva.com">✉️info@archiva.com</a>
+            <p>📞+237 654 08 28 53</p>
+            <p>📫Yassa.Douala/Cameroun</p>
+        </div>
+        <div class="acceuil">
+            <ul>
+                <li><a href="index.html">Accueil</a></li>
+                <li><a href="cers.html">CERs</a></li>
+                <li><a href="mes_favoris.html">Mes CERs favoris</a></li>
+                <li><a href="gestion_cer.html">Gestion de CER</a></li>
+            </ul>
+        </div>
+        <div class="reseaux_sociaux">
+            <p>Social Profiles</p>
+            <div class="image_sociales">
+                <a href="#"><img src="assets/facebook.png" alt="Image de facebook"></a>
+                <a href="#"><img src="assets/twitter.webp" alt="Image de twitter"></a>
+                <a href="#"><img src="assets/in.HwCzTPuK5UdM0Sxg8fyQowHaHa" alt="Image de insta"></a>
+            </div>
+        </div>
+        <div class="footer2">
+            <p>© 2024 Archiva, All rights reserved.</p>
+        </div>
+
+    </footer>
+    <script 
+        src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js" 
+        integrity="sha384
+        MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM" 
+        crossorigin="anonymous">
+    </script> 
+    <script type="module" src="/src/main.jsx"></script>
+</body>
+</html>
